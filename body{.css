@@ -1,0 +1,72 @@
+body{
+    background: #262626;
+}
+.box-area{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;   
+}
+.single-box{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 480px;
+    border-radius: 4px;
+    background-color: #fff;
+    text-align: center;
+    margin: 20px;
+    transition: .3s;
+}
+.img-area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    border: 6px solid #ddd;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    padding: 50px;
+    -webkit-background-size: cover;
+    background-size:cover ;
+    background-position: center ;
+}
+.single-box:nth-child(1) .img-area{
+    background-image: url(image.1.jpg);
+}
+.single-box:nth-child(2) .img-area{
+    background-image: url(image.2.jpg);
+}
+.single-box:nth-child(3) .img-area{
+    background-image: url(image.3.jpg);
+}
+.header-text{
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 48px;
+}
+.img-text{
+    font-family: 12px;
+    padding-top: 20px;
+}
+.img-text p{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+}
+.single-box:hover{
+    background: #e84393;
+    color: #fff;
+}
+.btn {
+    padding: 10px 18px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: purple;
+    border: none;
+    border-radius: 30px;
+    color: #fff;
+}
